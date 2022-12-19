@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="main">
+        <form action="" method="get">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter username" name="username" [(ngModel)]="username">
+            <p class="error">{{error1}}</p>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter password" name="password" [(ngModel)]="password">
+            <p class="error">{{error2}}</p>
+            <input type="button" value="login" (click)="login()">
+            <p class="error">{{error3}}</p>
+        </form>
+    </div>
+</div>
+
+
+
+
+

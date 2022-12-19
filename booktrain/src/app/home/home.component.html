@@ -1,0 +1,108 @@
+<select [(ngModel)]="SelectOption" >
+    <option [value]="action.id" *ngFor="let action of action">{{action.name}}</option>
+</select>
+
+<div *ngIf="SelectOption==0">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Train Number</th>
+                <th>Train Name</th>
+                <th>Arrival Time</th>
+                <th>Department Time</th>
+                <th>SeatAvailable</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let data of dataGen">
+                <td>{{data.train_num}}</td>
+                <td>{{data.train_name}}</td>
+                <td>{{data.arrv_time}}</td>
+                <td>{{data.dept_time}}</td>
+                <td>{{data.seats_available}}</td>
+                <input type="button" value="BOOK" (click)="check(data.seats_available)">
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div *ngIf="SelectOption==1">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Train Number</th>
+                <th>Train Name</th>
+                <th>Arrival Time</th>
+                <th>Department Time</th>
+                <th>SeatAvailable</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let data of data3A">
+                <td>{{data.train_num}}</td>
+                <td>{{data.train_name}}</td>
+                <td>{{data.arrv_time}}</td>
+                <td>{{data.dept_time}}</td>
+                <td>{{data.seats_available}}</td>
+                <input type="button" value="BOOK">
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div *ngIf="SelectOption==2">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Train Number</th>
+                <th>Train Name</th>
+                <th>Arrival Time</th>
+                <th>Department Time</th>
+                <th>SeatAvailable</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let data of data2A">
+                <td>{{data.train_num}}</td>
+                <td>{{data.train_name}}</td>
+                <td>{{data.arrv_time}}</td>
+                <td>{{data.dept_time}}</td>
+                <td>{{data.seats_available}}</td>
+                <input type="button" value="BOOK">
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div *ngIf="SelectOption==3">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Train Number</th>
+                <th>Train Name</th>
+                <th>Arrival Time</th>
+                <th>Department Time</th>
+                <th>SeatAvailable</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let data of dataSL">
+                <td>{{data.train_num}}</td>
+                <td>{{data.train_name}}</td>
+                <td>{{data.arrv_time}}</td>
+                <td>{{data.dept_time}}</td>
+                <td>{{data.seats_available}}</td>
+                <input type="button" value="BOOK" (click)="check(data.seats_available)">
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+

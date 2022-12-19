@@ -1,0 +1,45 @@
+<select [(ngModel)]="SelectOption">
+    <option [value]="action.id" *ngFor="let action of action">{{action.name}}</option>
+</select>
+
+<div *ngIf="SelectOption == 1">
+<table border="1">
+    <thead>
+        <tr>
+            <th>USN</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of data">
+            <td>{{data.usn}}</td>
+            <td>{{data.name}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<div *ngIf="SelectOption == 2">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>USN</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of data">
+                <td>{{data.usn}}</td>
+                <td>{{data.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+
+    <input type="text" placeholder="usn" #box>
+    <input type="text" placeholder="name" #box1>
+    <button (click)="get(box.value,box1.value)">Add</button>
+    <p>{{display}}</p>
+    <p>{{display1}}</p>
+    

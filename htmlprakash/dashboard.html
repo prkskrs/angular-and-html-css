@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <form action="" method="get">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                <label for="usn">USN</label>
+                <input type="text" name="usn" id="usn" placeholder="Enter Your USN">
+                <label for="isa1">ISA1</label>
+                <input type="text" name="isa1" id="isa1" placeholder="Enter ISA1 Marks">
+                <label for="isa2">ISA2</label>
+                <input type="text" name="isa2" id="isa2" placeholder="Enter ISA2 Marks">
+                <label for="esa">ESA</label>
+                <input type="text" name="esa" id="esa" placeholder="Enter ESA Marks">
+                <input type="button" value="add" id="add" onclick="addd()">
+                <input type="button" value="reset" id="reset" onclick="rst()">
+                <input type="button" value="delete" id="delete" onclick="dlt()">
+            </form>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>ISA1</th>
+            <th>ISA2</th>
+            <th>ESA</th>
+        </tr>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>

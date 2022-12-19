@@ -1,0 +1,11 @@
+<p>login works!</p>
+<form action="" method="get">
+    <label for="username">Username</label>
+    <input name="username" type="text" [(ngModel)]="username">
+    <p id="error">{{error1}}</p>
+    <label for="password">Password</label>
+    <input name="password" type="password" [(ngModel)]="password">
+    <p id="error">{{error2}}</p>
+    <input type="button" value="login" (click)="login()">
+    <p id="error">{{error3}}</p>
+</form>
